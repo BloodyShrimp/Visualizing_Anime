@@ -39,8 +39,6 @@ for id in list_of_ids:
         print(f'Unexpected error occured at index: {i}, id: {id}\nSaving and exiting', file=sys.stderr)
         error_occured = True
         break
-    # if i == 100:
-    #     break
 
 with open('anime_data.json', 'w') as outfile:
     json.dump(list_of_animes, outfile)
